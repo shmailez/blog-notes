@@ -3,11 +3,6 @@
 import { listStore } from "@/store/store";
 import { FormEventHandler, useState } from "react";
 
-// type forAddNote = {
-//   title: string;
-//   body: string;
-// };
-
 export default function Add() {
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
@@ -31,6 +26,7 @@ export default function Add() {
           onChange={(e) => setTitle(e.target.value)}
         />
         <textarea
+          rows={5}
           value={body}
           onChange={(e) => setBody(e.target.value)}
         ></textarea>
