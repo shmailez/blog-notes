@@ -20,7 +20,8 @@ export default function AddForm() {
     preventDefault: () => void;
   }) => {
     e.preventDefault();
-    listStore.addNote(title, body, userName, userEmail);
+    // listStore.addNote(title, body, userName, userEmail);
+    listStore.addToServerNote(title, body, userName, userEmail);
     setTitle("");
     setBody("");
   };

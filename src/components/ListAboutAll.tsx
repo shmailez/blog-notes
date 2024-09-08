@@ -1,34 +1,37 @@
-import { listStore } from "@/store/store";
-import { observable } from "mobx";
-import { useEffect, useLayoutEffect } from "react";
+// import { listStore } from "@/store/store";
+// import { getList } from "@/services/list";
+import { Suspense } from "react";
 import { List } from "./List";
 
 export default function ListAboutAll() {
-  console.log(listStore.lister);
+  // const lister = await getList();
+
+  // const lis = listStore.loadLister().then();
+  // console.log("store", lis);
+  // console.log("component", lister);
 
   return (
     <>
-      <h1>About All</h1>
+      <h1>About All 87</h1>
 
-      <List />
-      {/* 
-      {listStore.lister.map((x) => (
-        <li key={x.id}>
-          <h1>{x.title}</h1>
-          <p>{x.body}</p>
-          <p>{x.userName}</p>
-          <p>{x.userEmail}</p>
-        </li>
-      ))} */}
+      <Suspense fallback={<Loading />}>
+        <List />
+      </Suspense>
 
-      {/* {listStore.list.map((x) => (
-        <li key={x.id}>
-          <h1>{x.title}</h1>
-          <p>{x.body}</p>
-          <p>{x.userName}</p>
-          <p>{x.userEmail}</p>
-        </li>
-      ))} */}
+      {/* <ul className="articleList">
+        {lister.map((x: any) => (
+          <li className="article" key={x.id}>
+            <h1 className="itemTitle">{x.title}</h1>
+            <p className="itemBody">{x.body}</p>
+            <p className="itemUserName">{x.userName}</p>
+            <p className="itemUserEmail">{x.userEmail}</p>
+          </li>
+        ))}
+      </ul> */}
     </>
   );
+}
+
+function Loading() {
+  return <h2>🌀 Loading...</h2>;
 }
