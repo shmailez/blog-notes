@@ -10,11 +10,13 @@ export default async function listPage({ params }: { params: Params }) {
   const article = await getArticle(id);
   return (
     <>
-      <Link href={`/about-all/`}>Go back to List</Link>
+      <Link className="goBack" href={`/about-all/`}>
+        Вернуться к статьям
+      </Link>
       <article>
         <h1>{article.title}</h1>
         <p>{article.body}</p>
-        <span>author: {article.userName}</span>
+        <span>автор: {article.userName}</span>
       </article>
     </>
   );

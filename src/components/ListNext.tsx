@@ -20,14 +20,19 @@ export default async function ListNext() {
 
   return (
     <>
-      <h1>List Next</h1>
+      {/* <h1>List Next</h1> */}
       <ul className="articleList">
         {post.map((x: any) => (
           <li className="articleItem" key={x.id}>
-            <Link className="itemTitle" href={`/about-all/${x.id}`}>
-              {x.title}
+            <Link href={`/about-all/${x.id}`}>
+              <h1 className="itemTitle">{x.title}</h1>
+
+              <p className="itemBody">
+                <span className="itembodyHide"></span>
+                {x.body}
+              </p>
             </Link>
-            <p className="itemBody">{x.body}</p>
+
             {/* <p className="itemUserName">{x.userName}</p>
             <p className="itemUserEmail">{x.userEmail}</p> */}
           </li>

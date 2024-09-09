@@ -103,10 +103,11 @@ a {
 header {
   position: relative;
   display: flex;
-  height: 64px;
+  height: 76px;
   justify-content: center;
   align-items: center;
-  background-color: rgb(16, 255, 3);
+  background-color: rgb(235, 235, 235);
+  border-bottom: #464646 solid 1px;
 }
 
 header ul{
@@ -121,9 +122,9 @@ header ul li{
 
 .hellodolly {
   position: absolute;
-  top: 0;
+  top: 8px;
   left: 8px;
-  color: #464646;
+  color: #717171;
   font-size: 0.8rem;
 }
 
@@ -131,32 +132,66 @@ form {
   display: flex;
   flex-direction: column;
   width: 50%;
-  margin: 0 auto;
+  margin: 40px auto;
 }
 
 form input{
   margin-bottom: 20px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+form textarea {
+  border-radius: 8px;
 }
 
 form button{
   margin-top: 20px;
+  border-radius: 8px;
+  border: none;
+  padding: 8px 0;
+  background-color: #636363;
+  color: #f4f4f4;
+}
+
+.goBack {
+  background-color: rgb(146, 145, 145);
+  position: absolute;
+  /* margin: 20px;
+  margin-top: 120px; */
+  padding: 12px;
+  text-align: center;
 }
 
 article {
-  margin: 8px;
+  margin: 60px 8px;
 }
 
 article  h1{
-  margin: 8px;
+  margin: 14px;
 }
+
+article p{
+  width: 85%;
+  margin: 0 auto;
+}
+
+article span{
+  background-color: #00000010;
+  width: 85%;
+  margin: 64px;
+  font-weight: bolder;
+  font-family: 'Courier New', Courier, monospace;
+}
+
 
 .articleList {
   /* background-color: green; */
   display: flex;
   flex-direction: column;
   align-items:flex-start;
-  width: 50%;
-  margin: 0 auto;
+  width: 65%;
+  margin: 20px auto;
 }
 
 /* .article {
@@ -174,16 +209,30 @@ article  h1{
 }
 
 .itemTitle{
-  /* background-color: red; */
   font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.itembodyHide {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(255, 0, 0, 0.63); */
+  background: linear-gradient(0deg, rgba(255,255,255,1) 25%, rgba(255,255,255, 0.2) 100%);
 }
 
 .itemBody{
-  background-color: rgb(0, 255, 98);
+  position: relative;
+  /* background-color: rgb(135, 135, 135); */
   margin-left: 8px;
-  max-height: 42px;
+  margin-top: 8px;
+  max-height: 50px;
   overflow: hidden;
+  /* border-bottom: #000 solid 10px; */
+  
 }
+
 .itemUserName{
   background-color: rgb(0, 21, 255);
 }
@@ -196,3 +245,9 @@ article  h1{
     color-scheme: dark;
   }
 } */
+
+@media (max-width: 700px) {
+  .articleList {
+    width: 90%;
+  }
+}

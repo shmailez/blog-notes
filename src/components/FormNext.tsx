@@ -39,7 +39,7 @@ export default function FormNext() {
     <form onSubmit={onSubmit}>
       <input type="text" name="title" />
       <textarea rows={5} name="body" />
-      <button type="submit">Submit</button>
+      <button type="submit">Добавить</button>
     </form>
   );
 }

@@ -14,26 +14,26 @@ export const Header = () => {
         <nav>
           <ul>
             <li>
-              <Link href={"/"}>Home</Link>
+              <Link href={"/"}>На главную</Link>
             </li>
             <li>
-              <Link href={"/about-all"}>About All</Link>
+              <Link href={"/about-all"}>Все статьи</Link>
             </li>
             {session?.data && (
               <li>
-                <Link href={"/add"}>Add</Link>
+                <Link href={"/add"}>Добавить</Link>
               </li>
             )}
 
             {session?.data ? (
               <li>
                 <Link href="#" onClick={() => signOut({ callbackUrl: "/" })}>
-                  Sign Out
+                  Выход
                 </Link>
               </li>
             ) : (
               <li>
-                <Link href="/api/auth/signin">Sign In</Link>
+                <Link href="/api/auth/signin">Войти</Link>
               </li>
             )}
           </ul>
