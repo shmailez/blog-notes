@@ -1,10 +1,10 @@
 "use client";
-import { addItemToList } from "@/services/list";
 import { useSession } from "next-auth/react";
 import { FormEvent } from "react";
 
 export default function FormNext() {
   const session = useSession();
+
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
