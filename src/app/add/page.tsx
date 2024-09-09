@@ -1,4 +1,3 @@
-import AddForm from "@/components/AddForm";
 import FormNext from "@/components/FormNext";
 
 export default function Add() {
@@ -6,7 +5,6 @@ export default function Add() {
     <>
       <h1>Form Data</h1>
       <FormNext />
-      {/* <AddForm /> */}
     </>
   );
 }

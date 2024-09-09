@@ -1,5 +1,5 @@
 import GoogleButton from "@/components/GoogleButton";
-import { Suspense, useEffect } from "react";
+import { Suspense } from "react";
 
 export default function Singin() {
   return (

@@ -11,9 +11,11 @@ export default async function listPage({ params }: { params: Params }) {
   return (
     <>
       <Link href={`/about-all/`}>Go back to List</Link>
-      <h1>{article.title}</h1>
-      <p>{article.body}</p>
-      <p>author: {article.userName}</p>
+      <article>
+        <h1>{article.title}</h1>
+        <p>{article.body}</p>
+        <span>author: {article.userName}</span>
+      </article>
     </>
   );
 }
