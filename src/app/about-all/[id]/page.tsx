@@ -15,7 +15,9 @@ export default async function listPage({ params }: { params: Params }) {
       </Link>
       <article>
         <h1>{article.title}</h1>
-        <p>{article.body}</p>
+
+        <pre>{article.body}</pre>
+
         <span>автор: {article.userName}</span>
       </article>
     </>

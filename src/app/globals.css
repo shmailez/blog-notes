@@ -149,9 +149,14 @@ form button{
   margin-top: 20px;
   border-radius: 8px;
   border: none;
-  padding: 8px 0;
+  padding: 14px 0;
   background-color: #636363;
   color: #f4f4f4;
+}
+
+form label {
+  margin-bottom: 8px;
+  color: #454545;
 }
 
 .goBack {
@@ -173,7 +178,16 @@ article  h1{
 
 article p{
   width: 85%;
-  margin: 0 auto;
+  margin: 20px auto;
+}
+
+article pre {
+  width: 85%;
+  margin: 20px auto;
+  font-size: 0.9rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  text-align: justify;
 }
 
 article span{
@@ -205,7 +219,7 @@ article span{
 
 .articleItem {
   list-style-type:  none;
-  margin: 8px;
+  margin: 28px 8px;
 }
 
 .itemTitle{

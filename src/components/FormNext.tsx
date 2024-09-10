@@ -37,7 +37,9 @@ export default function FormNext() {
 
   return (
     <form onSubmit={onSubmit}>
+      <label htmlFor="title">Заголовок</label>
       <input type="text" name="title" />
+      <label htmlFor="body">Текст статьи</label>
       <textarea rows={5} name="body" />
       <button type="submit">Добавить</button>
     </form>
