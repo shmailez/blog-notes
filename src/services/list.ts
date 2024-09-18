@@ -6,7 +6,7 @@ export const getList = async () => {
 
         const data = await await responce.json()
 
-        console.log(data)
+        // console.log(data)
 
         return data
     } catch (error) {
@@ -20,7 +20,7 @@ export const getArticle = async (id: any) => {
 
         const data = await await responce.json()
 
-        console.log(data)
+        // console.log(data)
 
         return data
     } catch (error) {
@@ -31,7 +31,7 @@ export const getArticle = async (id: any) => {
 
 export const addItemToList = async (item: any) => {
 
-    console.log('item', item)
+    // console.log('item', item)
     const article = item
 
     try {
@@ -45,7 +45,7 @@ export const addItemToList = async (item: any) => {
 
         // const data = responce.json()
 
-        console.log(responce)
+        // console.log(responce)
 
         // return data
     } catch (error) {
