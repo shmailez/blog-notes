@@ -24,6 +24,24 @@
         "type": "image/png"
       }
     ],
+    "screenshots": [
+        {
+        "src": "screenshots/image-desktop1.jpg",
+        "sizes": "640x320",
+        "type": "image/jpg",
+        "form_factor": "wide",
+        "label": "Wonder Widgets"
+        },
+
+        {
+            "src": "screenshots/image-desktop1.jpg",
+            "sizes": "640x320",
+            "type": "image/jpg",
+            "form_factor": "narrow",
+            "label": "Wonder Widgets"
+            }
+        
+    ],
     "theme_color": "#FFFFFF",
     "background_color": "#FFFFFF",
     "scope": "/",
